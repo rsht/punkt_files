@@ -1,0 +1,15 @@
+[user]
+	email = shtemberko@gmail.com
+	name = Roman Shtemberko
+[alias]
+	st = status
+	ci = commit
+	lg = log --oneline --graph --decorate
+	br = branch
+[difftool]
+	tool = meld
+	prompt = false
+[color]
+	ui = auto
+[core]
+	editor = vim
