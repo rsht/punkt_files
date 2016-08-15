@@ -2,6 +2,8 @@
 set number
 set numberwidth=1
 
+set ignorecase
+set incsearch
 
 
 
