@@ -28,6 +28,9 @@ nnoremap <leader>u vawUea
 " map '//' to search for selected text in visual mode
 vnoremap // y/<C-R>"<CR>
 
+"start 'search and replace'
+nnoremap <C-h> :%s/
+
 "MAPINGS END"
 
 
