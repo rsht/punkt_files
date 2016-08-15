@@ -47,6 +47,10 @@ vnoremap // y/<C-R>"<CR>
 "start 'search and replace'
 nnoremap <C-h> :%s/
 
+" Open NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+
 "MAPINGS END"
 
 
@@ -76,8 +80,17 @@ Plugin 'https://github.com/rdnetto/YCM-Generator'
 " L9
 Plugin 'L9'
 
+" Nerd Tree
+Plugin 'https://github.com/scrooloose/nerdtree'
+
+" git plugin for NERDTree
+Plugin 'https://github.com/Xuyuanp/nerdtree-git-plugin'
+
 " Nerd Commenter
 Plugin 'https://github.com/scrooloose/nerdcommenter'
+
+" Show git changes on lines
+Plugin 'https://github.com/airblade/vim-gitgutter'
 
 " QML syntax
 Plugin 'https://github.com/peterhoeg/vim-qml'
