@@ -8,6 +8,19 @@ set incsearch
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set list
 
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+
 
 
 "MAPINGS BEGIN
@@ -35,20 +48,6 @@ vnoremap // y/<C-R>"<CR>
 nnoremap <C-h> :%s/
 
 "MAPINGS END"
-
-
-
-
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
 
 
 
