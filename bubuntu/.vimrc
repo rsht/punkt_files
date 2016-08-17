@@ -50,7 +50,7 @@ nnoremap <C-h> :%s/
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-
+map <C-b> :make<CR>
 "MAPINGS END"
 
 
