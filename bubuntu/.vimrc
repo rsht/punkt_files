@@ -25,6 +25,8 @@ set expandtab
 
 "MAPINGS BEGIN
 
+nnoremap <C-g> :YcmCompleter GoToDeclaration<CR>
+
 "edit and source .vimrc
 nnoremap <leader>emv :vsplit $MYVIMRC<cr>
 nnoremap <leader>smv :source $MYVIMRC<cr>
