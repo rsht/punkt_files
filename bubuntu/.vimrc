@@ -25,13 +25,18 @@ set expandtab
 
 "MAPINGS BEGIN
 
-nnoremap <C-g> :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gto :YcmCompleter GoTo<CR>
+nnoremap <leader>fit :YcmCompleter FixIt<CR>
+
+" Delete All Whitespaces
+nnoremap <leader>daw ::%s/\s\+$//<CR>
 
 "edit and source .vimrc
 nnoremap <leader>emv :vsplit $MYVIMRC<cr>
 nnoremap <leader>smv :source $MYVIMRC<cr>
 
-nnoremap <leader>r :set relativenumber!<cr>
+"Toogle RelativeNumber
+nnoremap <leader>trn :set relativenumber!<cr>
 
 " move line up/down (advise from "learn vim script the hard way")
 noremap <leader>- ddp
