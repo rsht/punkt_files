@@ -72,27 +72,21 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+" L9 - helper lib
+Plugin 'L9'
 
 " YouCompleteMe
 Plugin 'https://github.com/Valloric/YouCompleteMe'
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
-
-
 " YCM Generator
 Plugin 'https://github.com/rdnetto/YCM-Generator'
-
-" L9
-Plugin 'L9'
 
 " Nerd Tree
 Plugin 'https://github.com/scrooloose/nerdtree'
 let NERDTreeIgnore = ['\.pyc$','\.o$']
-
 " git plugin for NERDTree
 Plugin 'https://github.com/Xuyuanp/nerdtree-git-plugin'
-
 " Nerd Commenter
 Plugin 'https://github.com/scrooloose/nerdcommenter'
 
@@ -110,23 +104,14 @@ let g:ctrlp_cmd = 'CtrlP'
 " vim-cmake
 Bundle 'jalcine/cmake.vim'
 
-" GDB plugin
-Plugin 'vim-scripts/Conque-GDB'
-let g:ConqueTerm_Color = 2         " 1: strip color after 200 lines, 2: always with color
-let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
-let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly 
-
 " auto-pairs
-Plugin 'https://github.com/jiangmiao/auto-pairs'
-
-" solorized theme
-Plugin 'https://github.com/altercation/vim-colors-solarized'
+Plugin 'https://github.com/Townk/vim-autoclose'
 
 "vim-markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
-
+" Python autocompletion
 Plugin 'davidhalter/jedi-vim'
 
 Plugin 'git://github.com/tpope/vim-surround.git'
@@ -146,6 +131,7 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+" toogle beetwen source/header
 Plugin 'https://github.com/vim-scripts/a.vim'
 
 " VUNDLE
