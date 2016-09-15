@@ -141,6 +141,8 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+Plugin 'https://github.com/vim-scripts/a.vim'
+
 " VUNDLE
 
 
