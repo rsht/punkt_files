@@ -83,6 +83,7 @@ Plugin 'L9'
 
 " Nerd Tree
 Plugin 'https://github.com/scrooloose/nerdtree'
+let NERDTreeIgnore = ['\.pyc$','\.o$']
 
 " git plugin for NERDTree
 Plugin 'https://github.com/Xuyuanp/nerdtree-git-plugin'
