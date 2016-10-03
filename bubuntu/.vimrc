@@ -129,6 +129,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " toogle beetwen source/header
 Plugin 'https://github.com/vim-scripts/a.vim'
 
+Plugin 'flazz/vim-colorschemes'
+
+Plugin 'https://github.com/tpope/vim-fugitive'
+
 " VUNDLE
 
 
