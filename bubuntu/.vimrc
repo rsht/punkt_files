@@ -104,17 +104,12 @@ let g:ctrlp_cmd = 'CtrlP'
 " vim-cmake
 Bundle 'jalcine/cmake.vim'
 
-" auto-pairs
-Plugin 'https://github.com/Townk/vim-autoclose'
-
 "vim-markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 " Python autocompletion
 Plugin 'davidhalter/jedi-vim'
-
-Plugin 'git://github.com/tpope/vim-surround.git'
 
 " Snippets related
 Plugin 'ervandew/supertab'
