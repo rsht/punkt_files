@@ -1,0 +1,41 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Roman Shtemberko
+#	email = roman.shtemberko@looksery.com
+[user]
+	name = Roman Shtemberko
+	email = roman.shtemberko@looksery.com
+[alias]
+	st = status
+	ci = commit
+	lg = log --oneline --graph --decorate
+	br = branch
+	co = checkout
+[difftool]
+	tool = meld
+	prompt = false
+[core]
+	editor = vim
+
+
+#mac os specific
+[apply]
+	whitespace = nowarn
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
