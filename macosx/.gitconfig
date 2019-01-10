@@ -1,17 +1,17 @@
 # This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-#	name = Roman Shtemberko
-#	email = roman.shtemberko@looksery.com
+
 [user]
 	name = Roman Shtemberko
-	email = roman.shtemberko@looksery.com
+	email = shtemberko@gmail.com
 [alias]
 	st = status
+	stq = status --ignore-submodules
+	addp = add --patch
 	ci = commit
 	lg = log --oneline --graph --decorate
 	br = branch
 	co = checkout
+	sup = submodule update
 [difftool]
 	tool = meld
 	prompt = false
@@ -39,3 +39,8 @@
     added = yellow
     changed = green
     untracked = cyan
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
