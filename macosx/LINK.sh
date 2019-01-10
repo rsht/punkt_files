@@ -2,7 +2,6 @@ base_dir=$(pwd)
 target_dir=~
 this_filename=`basename "$0"`
 
-
 cd $target_dir
 
 # create folders if missing
