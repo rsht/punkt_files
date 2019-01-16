@@ -12,6 +12,7 @@
 	br = branch
 	co = checkout
 	sup = submodule update
+	cp = cherry-pick
 [difftool]
 	tool = meld
 	prompt = false
