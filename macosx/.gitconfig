@@ -1,5 +1,8 @@
 # This is Git's per-user configuration file.
-
+[includeIf "gitdir:~"] # Path to personal "repos"
+	path = .gitconfig-personal
+[includeIf "gitdir:~/coder_inc/repos"] # Path to work root "repos"
+	path = .gitconfig-work
 [user]
 	name = Roman Shtemberko
 	email = shtemberko@gmail.com
@@ -13,33 +16,38 @@
 	co = checkout
 	sup = submodule update
 	cp = cherry-pick
-[difftool]
+[diff]
 	tool = meld
 	prompt = false
 [core]
 	editor = vim
+	autocrlf = input
+	longpaths = true
+	symlinks = true
 
+[init]
+	defaultBranch = main
 
 #mac os specific
 [apply]
 	whitespace = nowarn
 [color]
-    branch = auto
-    diff = auto
-    status = auto
+	branch = auto
+	diff = auto
+	status = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+	current = green reverse
+	local = green
+	remote = yellow
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = green
+	changed = magenta
+	untracked = cyan
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
