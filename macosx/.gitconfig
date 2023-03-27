@@ -3,9 +3,6 @@
 	path = .gitconfig-personal
 [includeIf "gitdir:~/coder_inc/repos"] # Path to work root "repos"
 	path = .gitconfig-work
-[user]
-	name = Roman Shtemberko
-	email = shtemberko@gmail.com
 [alias]
 	st = status
 	stq = status --ignore-submodules
